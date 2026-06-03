@@ -580,10 +580,6 @@ Together, Table~\ref{tab:mode-selector} and Figure~\ref{fig:mode-selector-regret
 \section{Discussion}
 \label{sec:discussion}
 
-This section clarifies the scope of the method and the regimes in which sparse-prefix traversal is most relevant.
-
-\subsection{Relation to sparse and convolutional computation}
-
 The proposed method is best understood as an exact evaluation strategy for pointwise or observation-only finite-stencil density computations. In pointwise evaluation, \(M\) may be small, so the prefix-index construction cost must be amortized carefully. In observation-only evaluation, \(M=n\), as in leave-one-out or observation-level scoring, and Proposition~\ref{prop:cost-criterion} compares \(dG_{\mathrm{occ}}+M\bar p\) with \(M|\stencil|\). Sparse-prefix traversal is most relevant when the stencil is large and occupied grid cells represent a small fraction of the candidate local stencil branches.
 
 This scope is different from full-grid convolutional smoothing. Binned KDEs with compactly supported kernels or explicitly truncated Gaussian kernels can be represented by finite local stencils. In contrast, untruncated Gaussian binned KDEs are more naturally treated as convolutional grid smoothers, especially when the full grid is evaluated. In that regime, separable convolution and FFT-based methods remain important alternatives \citep{Silverman1982FFT,Wand1994FastKDE,GramackiGramacki2017}. Sparse-prefix traversal is therefore not intended to replace full-grid convolution or FFT methods when the evaluation task, grid size, and smoothing structure favor those computations.
