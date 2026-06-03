@@ -1,0 +1,21 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+
+# Temporary files
+tmp/
+temp/

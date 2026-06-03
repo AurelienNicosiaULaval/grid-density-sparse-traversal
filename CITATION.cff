@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: Exact sparse traversal for local finite-stencil grid-count density estimators
+message: If you use this code or results, please cite the manuscript associated with this repository.
+authors:
+  - family-names: Nicosia
+    given-names: Aurélien
+    orcid: https://orcid.org/0000-0002-0974-9988
+license: MIT
